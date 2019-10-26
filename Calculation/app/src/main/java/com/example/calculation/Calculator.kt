@@ -14,6 +14,7 @@ class Calculator : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
+        editText.setEnabled(false)
 
         button1.setOnClickListener {
             editText.setText(editText.getText().append("1"))
